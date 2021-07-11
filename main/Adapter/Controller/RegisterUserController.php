@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Main\Adapter\Controllers;
+namespace Main\Adapter\Controller;
 
 
 // Ports
@@ -15,15 +15,15 @@ use Main\Domain\User;
 use Main\Usecase\AddUserToRepository;
 
 // Adapters
-use Main\Adapter\Controllers\Port\HttpRequest;
-use Main\Adapter\Controllers\Port\HttpResponse;
+use Main\Adapter\Controller\Port\HttpRequest;
+use Main\Adapter\Controller\Port\HttpResponse;
 
 class RegisterUserController
 {
-    public EncryptData $encryptData;
-    public UserRepository $userRepository;
-    public HttpRequest $httpRequest;
-    public HttpResponse $httpResponse;
+    private EncryptData $encryptData;
+    private UserRepository $userRepository;
+    private HttpRequest $httpRequest;
+    private HttpResponse $httpResponse;
 
     public function __construct(EncryptData $encryptData, UserRepository $userRepository, HttpRequest $httpRequest, HttpResponse $httpResponse)
     {

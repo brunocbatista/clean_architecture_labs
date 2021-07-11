@@ -4,7 +4,7 @@
 namespace Main\External\Http;
 
 // Adapters
-use Main\Adapter\Controllers\Port\HttpResponse;
+use Main\Adapter\Controller\Port\HttpResponse;
 use Symfony\Component\HttpFoundation\Response as codes;
 
 class LumenHttpClientResponse implements HttpResponse

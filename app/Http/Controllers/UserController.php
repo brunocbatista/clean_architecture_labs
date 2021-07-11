@@ -10,13 +10,13 @@ use Main\External\Http\LumenHttpClientResponse;
 use Main\External\Repository\LumenQueryBuilderUserRepository;
 
 // Ports
-use Main\Adapter\Controllers\Port\HttpRequest;
-use Main\Adapter\Controllers\Port\HttpResponse;
+use Main\Adapter\Controller\Port\HttpRequest;
+use Main\Adapter\Controller\Port\HttpResponse;
 use Main\Usecase\Port\EncryptData;
 use Main\Usecase\Port\UserRepository;
 
 // Controllers
-use Main\Adapter\Controllers\RegisterUserController;
+use Main\Adapter\Controller\RegisterUserController;
 
 
 class UserController extends Controller

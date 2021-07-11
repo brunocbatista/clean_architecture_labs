@@ -4,7 +4,7 @@
 namespace Main\External\Http;
 
 // Adapters
-use Main\Adapter\Controllers\Port\HttpRequest;
+use Main\Adapter\Controller\Port\HttpRequest;
 
 class LumenHttpClientRequest implements HttpRequest
 {

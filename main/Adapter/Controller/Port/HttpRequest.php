@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Main\Adapter\Controllers\Port;
+namespace Main\Adapter\Controller\Port;
 
 
 interface HttpRequest
