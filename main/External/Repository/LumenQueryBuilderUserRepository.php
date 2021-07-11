@@ -4,12 +4,12 @@
 namespace Main\External\Repository;
 
 // Usecases
-use Main\Usecase\Port\UserRepository;
+use Main\Adapter\Repository\Port\Database;
 
 // Infra
 use Illuminate\Support\Facades\DB;
 
-class LumenQueryBuilderUserRepository implements UserRepository
+class LumenQueryBuilderUserRepository implements Database
 {
 
     public function add(array $userData): void
