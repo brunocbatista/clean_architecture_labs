@@ -16,13 +16,18 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Main\\": "main/"
+            "App\\": "external/Framework/Lumen/app/",
+            "Database\\Factories\\": "external/Framework/Lumen/database/factories/",
+            "Database\\Seeders\\": "external/Framework/Lumen/database/seeders/",
+            "Domain\\": "domain/",
+            "Usecase\\": "usecase/",
+            "Adapter\\": "adapter/",
+            "External\\": "external/"
         }
     },
     "autoload-dev": {
         "classmap": [
-            "tests/"
+            "external/Framework/Lumen/tests/"
         ]
     },
     "config": {
@@ -31,10 +36,5 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ]
-    }
+    "prefer-stable": true
 }
